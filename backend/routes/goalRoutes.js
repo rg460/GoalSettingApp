@@ -1,8 +1,8 @@
-const  express = require('express');
+const express = require('express');
 const router = express.Router();
 
-app.get('/api/goals', (req, res) =>{
+router.get('/', (req, res) =>{
     res.status(200).json({message:'Get goals'});
 })
 
-module.exports = router;
+module.exports = router
