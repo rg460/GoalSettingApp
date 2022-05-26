@@ -15,3 +15,5 @@ router.delete('/:id', (req, res) =>{
 })
 
 module.exports = router
+
+// Routes Working on Postman
