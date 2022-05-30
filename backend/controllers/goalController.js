@@ -2,14 +2,19 @@
 // @route GET/api/goals 
 // @access Private
 const getGoals = (req,res)=>{
+
+   
     res.status(200).json({message:'Get goals'});
 }
+
 // @desc Set goal
 // @route POST /api/goals 
 // @access Private
 const setGoal = (req,res)=>{
+    console.log(req.body)
     res.status(200).json({message:'Set goals'});
 }
+
 // @desc update goal
 // @route PUT /api/goals/:id
 // @access Private
