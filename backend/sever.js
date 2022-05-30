@@ -15,4 +15,3 @@ app.use(errorHandler)
 app.listen(port , () => console.log(`server listening on ${port}`));
 
 
-// error message working in postman
