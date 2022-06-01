@@ -18,6 +18,5 @@ app.use(errorHandler)
 
 app.listen(port , () => console.log(`server listening on ${port}`));
 
-// emppty array returnd from postman - correct 
-
+// adding a new goal works in Postman
 
