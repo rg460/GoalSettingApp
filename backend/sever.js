@@ -18,5 +18,5 @@ app.use(errorHandler)
 
 app.listen(port , () => console.log(`server listening on ${port}`));
 
-// adding a new goal works in Postman
+// updating a goal works in postman
 
