@@ -18,6 +18,6 @@ app.use(errorHandler)
 
 app.listen(port , () => console.log(`server listening on ${port}`));
 
-// MongoDB working
+// emppty array returnd from postman - correct 
 
 
