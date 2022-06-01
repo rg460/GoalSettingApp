@@ -18,5 +18,4 @@ app.use(errorHandler)
 
 app.listen(port , () => console.log(`server listening on ${port}`));
 
-// updating a goal works in postman
-
+// delete goal works in  postman 
