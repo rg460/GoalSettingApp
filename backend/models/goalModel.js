@@ -8,3 +8,5 @@ const goalSchema =  mongose.Schema({
 },{
     timestamp: true
 })
+
+module.exports = mongoose.model('Goal',goalSchema)
