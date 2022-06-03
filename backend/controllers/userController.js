@@ -4,3 +4,4 @@ const registerUser = (req,res) => {
 module.exports = {
     registerUser,
 }
+// Post request working in Postman
