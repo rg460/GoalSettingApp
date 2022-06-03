@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const goalSchema =  mongoose.Schema({
     user:{
-        type: mongoose.Schema.Types.ObjectId
+        type: mongoose.Schema.Types.ObjectId,
+        required: true
     },
     text:{
         type: String,
