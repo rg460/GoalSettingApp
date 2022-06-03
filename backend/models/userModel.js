@@ -11,7 +11,9 @@ const userSchema = mongoose.schema({
     },password:{
         type: String,
         required: [true,'Please add a password']
-    }
+    },
+},{
+    timestamp: true
 })
 
 module.exports = mongoose.model('Goal',userSchema)
