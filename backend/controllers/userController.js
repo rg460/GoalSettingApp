@@ -46,6 +46,13 @@ const registerUser =asyncHandler(async (req,res) => {
 // @route POST/api/users/login
 // @access Public
 const loginUser = asyncHandler(async (req,res) => {
+    const {email, password} = req.body
+    // Check for user email
+    const user = await User.findOne({email})
+    // compares 
+    if(user && (await bycrypt.compare(password, user.password))){
+
+    }
     res.json({message:'Login user'})
 }) 
 
@@ -62,3 +69,4 @@ module.exports = {
     getMe
 }
 // error Handling working in Postman
+// Working in Postman and MongoDB compass
