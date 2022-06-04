@@ -19,7 +19,9 @@ const registerUser =asyncHandler(async (req,res) => {
         res.status(400)
         throw new Error('User already exists')
     }
-// 
+    // Hash Paswword
+    const salt = await bcrypt.genSalt(10)
+
     res.json({message:'Register user'})
 }) 
 
