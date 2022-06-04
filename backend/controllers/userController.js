@@ -12,6 +12,8 @@ const registerUser =asyncHandler(async (req,res) => {
         res.status(400)
         throw new Error('Please add all fields')
     }
+    // Check to see if user exists
+    const userExits = await User.findOne({email})
     res.json({message:'Register user'})
 }) 
 
