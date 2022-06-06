@@ -34,7 +34,7 @@ const registerUser =asyncHandler(async (req,res) => {
         res.status(201).json({
             _id: user.id,
             name: user.name,
-            email: user.email
+            email: user.email,
         })
     }else{
         res.status(400)
@@ -48,19 +48,20 @@ const registerUser =asyncHandler(async (req,res) => {
 const loginUser = asyncHandler(async (req,res) => {
     const {email, password} = req.body
     // Check for user email
-    const user = await User.findOne({email})
-    // compares 
-    if(user && (await bycrypt.compare(password, user.password))){
+    const user = await User.findOne({ email })
+    
+    if (user && (await bcrypt.compare(password, user.password))) {
         res.json({
-            _id: user.id,
-            name: user.name,
-            email: user.email
+          _id: user.id,
+          name: user.name,
+          email: user.email,
+          
         })
-    }else{
+      } else {
         res.status(400)
-        throw new Error('Invalid credentials') 
-    }
-}) 
+        throw new Error('Invalid credentials')
+      }
+    }) 
 
 // @desc Get user data
 // @route GET/api/users/me
@@ -77,3 +78,4 @@ module.exports = {
 // error Handling working in Postman
 // Working in Postman and MongoDB compass
 // Mongo DB working again
+// Login credentials working in Postman
