@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node backend/sever.js",
-    "server": "nodemon backend/sever.js"
+    "server": "nodemon backend/sever.js",
+    "client": "npm start --prefix frontend"
   },
   "repository": {
     "type": "git",
