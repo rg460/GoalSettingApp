@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Router>
-      <Header />
         <div className="container">
+        <Header />
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/Login" element={<Login />} />
