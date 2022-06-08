@@ -7,9 +7,9 @@ function App() {
   return (
     <>
       <Router>
+      <Header />
         <div className="container">
           <Routes>
-            <Header />
             <Route path="/" element={<Dashboard />} />
             <Route path="/Login" element={<Login />} />
             <Route path="/Register" element={<Register />} />

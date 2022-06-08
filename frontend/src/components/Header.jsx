@@ -1,11 +1,12 @@
+
 import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <link to="/">GoalSetter</link>
+        <Link to="/">GoalSetter</Link>
       </div>
       <ul>
         <li>
