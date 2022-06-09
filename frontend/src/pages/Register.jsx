@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import {faUser} from 'react-icons/fa'
 function Register() {
     const [formData, setFormData] = useState({
         name:'',
@@ -8,7 +9,11 @@ function Register() {
     })
     const {name, email, password,password2} = formData
   return (
-    <div>Register</div>
+    <>
+        <section className='heading'>
+           <h1></h1>
+        </section>
+    </>
   )
 }
 
