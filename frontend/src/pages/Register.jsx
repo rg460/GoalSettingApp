@@ -8,6 +8,9 @@ function Register() {
         password2: ''
     })
     const {name, email, password,password2} = formData
+    const onChange = () =>{}
+
+    
   return (
     <>
        <section className='heading'>
@@ -18,7 +21,7 @@ function Register() {
       </section>
         <section className='form'>
             <form>
-                <input type="text" className="form-control" id="name" name="name" value={name} />
+                <input type="text" className="form-control" id="name" name="name" value={name} placeholder='Enter your name' onChange={onChange} />
             </form>
         </section>
     </>
