@@ -32,6 +32,9 @@ function Register() {
             </div>     
             <div className='form-group'>
             <input type="password" className="form-control" id="password2" name="password2" value={password2} placeholder='Confirm Password' onChange={onChange} />
+            </div>
+            <div className='form-group'>
+               <button type="submit" className='btn btn-block'>Submit</button>
             </div>         
             </form>
         </section>
