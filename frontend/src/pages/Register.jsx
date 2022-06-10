@@ -11,7 +11,7 @@ function Register() {
   return (
     <>
         <section className='heading'>
-           <h1></h1>
+           <h1><faUser /></h1>
         </section>
     </>
   )
