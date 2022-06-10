@@ -9,3 +9,21 @@ const intialState ={
     isLoading: false,
     message: ''
 }
+
+
+export const authSlice = createSlice({
+    name: 'auth',
+    intialState,
+    reducers: {
+        reset: (state) => {
+            state.isLoading = false
+            state.isSuccess = false
+            state.isError = false
+            state.message = ''
+            state.isLoading = false
+        }
+    },
+    extraReducers: () => {
+
+    }
+})
