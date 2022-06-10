@@ -8,8 +8,14 @@ function Register() {
         password2: ''
     })
     const {name, email, password,password2} = formData
-    const onChange = () =>{}
-    const onSubmit = () =>{}
+
+    const onChange = () =>{
+
+    }
+
+    const onSubmit = (e) =>{
+        e.preventDefault()
+    }
     
   return (
     <>
