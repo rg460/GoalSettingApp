@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import {faUser} from 'react-icons/fa'
+import { FaUser } from 'react-icons/fa'
 function Register() {
     const [formData, setFormData] = useState({
         name:'',
@@ -10,9 +10,16 @@ function Register() {
     const {name, email, password,password2} = formData
   return (
     <>
-        <section className='heading'>
-           <h1><faUser /></h1>
-           <p>Please Create an account</p>
+       <section className='heading'>
+        <h1>
+          <FaUser /> Register
+        </h1>
+        <p>Please create an account</p>
+      </section>
+        <section className='form'>
+            <form>
+                <input type="text" className="form-control" id="name" name="name" value={name} />
+            </form>
         </section>
     </>
   )
