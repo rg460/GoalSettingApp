@@ -9,7 +9,7 @@ function Register() {
     })
     const {name, email, password,password2} = formData
     const onChange = () =>{}
-
+    const onSubmit = () =>{}
     
   return (
     <>
@@ -20,7 +20,7 @@ function Register() {
         <p>Please create an account</p>
       </section>
         <section className='form'>
-            <form>
+            <form onSubmit={onSubmit}>
             <div className='form-group'>
             <input type="text" className="form-control" id="name" name="name" value={name} placeholder='Enter your name' onChange={onChange} />
             </div> 
