@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit'
 
 export const store = configureStore({
   reducer: {
-      auth: null
+    auth: null
   },
 });
-// new error message comming up on console page now renders
+// new error message comming up on console page now renders if changed from null page doesn't <CgGenderFemale />
