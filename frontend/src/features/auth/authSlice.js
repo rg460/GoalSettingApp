@@ -20,22 +20,22 @@
 //     }
 // })
 
-// // export const authSlice = createSlice({
-// //     name: 'auth',
-// //     intialState,
-// //     reducers: {
-// //     //     reset: (state) => {
-// //     //         state.isLoading = false
-// //     //         state.isSuccess = false
-// //     //         state.isError = false
-// //     //         state.message = ''
-// //     //         state.isLoading = false
-// //     //     },
-// //     // },
-// //     extraReducers: () => {
+// export const authSlice = createSlice({
+//     name: 'auth',
+//     intialState,
+//     reducers: {
+//         reset: (state) => {
+//             state.isLoading = false
+//             state.isSuccess = false
+//             state.isError = false
+//             state.message = ''
+            
+//         },
+//     },
+//     extraReducers: () => {
 
-// //     }
-// // })
-// // export const { reset } = authSlice.action
-// // export default authSlice.reducer
+//     }
+// })
+// export const { reset } = authSlice.action
+// export default authSlice.reducer
 
